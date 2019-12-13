@@ -6,7 +6,7 @@
 
 ## 使用方式
 
-1. 编辑脚本，并编辑修改配置信息：
+### 1. 编辑脚本，并编辑修改配置信息：
 
 使用`vi/vim` 来打开 `auto-tls.sh`文件：
 
@@ -24,7 +24,7 @@ filename="tls"
 days=1000
 ```
 
-2. 配置docker文件
+### 2. 配置docker文件
 
 运行该脚本将自动生成两个tar存档：
 
@@ -33,7 +33,7 @@ days=1000
 
 **配置 docker TLS 传输的两种方式：**
 
-1). 修改 `daemon.json`文件：
+#### 1). 修改 `daemon.json`文件：
 
 ```sh
 $ cd /etc/docker/
@@ -71,7 +71,7 @@ ExecStart=/usr/bin/dockerd
 ```
 -----------------------------------------------------------------------
 
-2). 修改 docker.service
+#### 2). 修改 docker.service
 
 ```sh
 $ vi /usr/lib/systemd/system/docker.service
@@ -86,7 +86,7 @@ $ systemctl daemon-reload
 $ systemctl restart docker
 ```
 
-3. 连接方式：
+### 3. 连接方式：
 
 复制 `tls-client.tar.gz` 到另外一台服务器并解压，使用证书连接：
 

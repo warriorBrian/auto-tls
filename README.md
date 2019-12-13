@@ -1,12 +1,12 @@
 # Automatically generate Docker TLS certificate script
 
-[中文](https://github.com/warriorBrian/auto-tls/blob/master/README_zh.md) | [English](https://github.com/warriorBrian/auto-tls/blob/master/README.md)
+[中文](https://github.com/warriorBrian/auto-tls/blob/master/README_zh.md) | [English](https://github.com/warriorBrian/auto-tls/blob/master/README_zh.md)
 
 Automatically generate Docker TLS certificate to make docker cross-platform connection more secure!
 
 ## How to use
 
-1. Edit the script, changes need to be configured
+### 1. Edit the script, changes need to be configured
 
 Open the `auto-tls.sh` file using `vi/vim`, Example:
 
@@ -24,7 +24,7 @@ filename="tls"
 days=1000
 ```
 
-2. Configure docker file
+### 2. Configure docker file
 
 The script will automatically generate two tar archives:
 
@@ -33,7 +33,7 @@ The script will automatically generate two tar archives:
 
 **Configure docker TLS two ways:**
 
-1). Modify the `daemon.json` file
+#### 1). Modify the `daemon.json` file
 
 ```sh
 $ cd /etc/docker/
@@ -71,7 +71,7 @@ ExecStart=/usr/bin/dockerd
 ```
 -----------------------------------------------------------------------
 
-2). Modify docker.service
+#### 2). Modify docker.service
 
 ```sh
 $ vi /usr/lib/systemd/system/docker.service
@@ -86,7 +86,7 @@ $ systemctl daemon-reload
 $ systemctl restart docker
 ```
 
-3. Connection method
+### 3. Connection method
 
 Copy `tls-client.tar.gz` to another server, unzip it, and connect with a certificate
 
