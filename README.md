@@ -1,6 +1,6 @@
 # Automatically generate Docker TLS certificate script
 
-[中文](https://github.com/warriorBrian/auto-tls/blob/master/README_zh.md) | [English](https://github.com/warriorBrian/auto-tls/blob/master/README_zh.md)
+[中文](https://github.com/warriorBrian/auto-tls/blob/master/README_zh.md) | [English](https://github.com/warriorBrian/auto-tls/blob/master/README.md)
 
 Automatically generate Docker TLS certificate to make docker cross-platform connection more secure!
 

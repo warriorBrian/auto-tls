@@ -1,6 +1,6 @@
 # 自动生成 Docker TLS 证书脚本
 
-[中文](https://github.com/warriorBrian/auto-tls/blob/master/README_zh.md) | [English](https://github.com/warriorBrian/auto-tls/blob/master/README_zh.md)
+[中文](https://github.com/warriorBrian/auto-tls/blob/master/README_zh.md) | [English](https://github.com/warriorBrian/auto-tls/blob/master/README.md)
 
 自动生成Docker TLS证书，使 Docker **跨平台**连接更安全！
 
